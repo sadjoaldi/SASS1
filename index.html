@@ -16,136 +16,110 @@
   </head>
   <body>
     <!-- *********SECTION HEADER************* -->
-    <header class="herder-section">
+    <header>
       <div class="head-container">
-        <div class="top-container">
-          <h1>la montagne ça vous gagne</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            facere.
-          </p>
-        </div>
-
-        <a href="btn"
-          ><i><i class="fa-sharp fa-regular fa-arrow-down"></i></i
-        ></a>
+        <h1>la montagne ça vous gagne</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, facere.
+        </p>
+        <span>
+          <a href="#main"><i class="fa-solid fa-arrow-down"></i></a
+        ></span>
       </div>
-      <div class="nav-box">
-        <div class="nav-container">
-          <ul>
-            <li>this is massively</li>
-            <li>generic page</li>
-            <li>elements reference</li>
-          </ul>
-        </div>
-        <div class="media-container">
-          <a href="twitter"
-            ><i><i class="fa-brands fa-twitter"></i></i
-          ></a>
-          <a href="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="instagram"
-            ><i><i class="fa-brands fa-instagram"></i></i
-          ></a>
-          <a href="github"
-            ><i><i class="fa-brands fa-github"></i></i
-          ></a>
-        </div>
-      </div>
+      <!-- ****NAV BARRE***** -->
+      <nav>
+        <ul>
+          <li>this is massively</li>
+          <li>generic page</li>
+          <li>elements reference</li>
+        </ul>
+        <ul class="social-container">
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- ***MAIN** -->
-    <main>
+    <main id="main">
       <!-- ****SECTION PRESENTATION GENERALE**** -->
       <section class="mass-headline">
-        <div class="mass_headline-container">
-          <h4>april 25,2017</h4>
-          <span>april 25,2017</span>
-          <h2>and this is a massive headeline</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
-            exercitationem ullam, voluptatem veniam deserunt non iste officiis
-            voluptate est nemo dolorem quis omnis consequuntur? Inventore.
-          </p>
-        </div>
-        <div class="massive-img">
-          <img src="./assets/img/pic01.jpg" alt="climp montagne" />
-        </div>
-        <button>full story</button>
+        <span>april 25,2017</span>
+        <h2>and this is a massive headeline</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+          exercitationem ullam, voluptatem veniam deserunt non iste officiis
+          voluptate est nemo dolorem quis omnis consequuntur? Inventore.
+        </p>
+
+        <img src="./assets/img/pic01.jpg" alt="climp montagne" />
+
+        <button class="btn">full story</button>
       </section>
       <!-- **SECTION CHOIX **** -->
       <section class="box">
-        <div class="box-container">
-          <div class="box-container-left">
-            <span>april 24,2017</span>
-            <h3>sed magna ipsum faucibus</h3>
-            <img src="./assets/img/pic02.jpg" alt="mont" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              debitis nisi, atque perferendis alias nihil.
-            </p>
-            <button>full story</button>
-          </div>
-          <div class="box-container-right">
-            <span>april 24,2017</span>
-            <h3>sed magna ipsum faucibus</h3>
-            <img src="./assets/img/pic03.jpg" alt="mont" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              debitis nisi, atque perferendis alias nihil.
-            </p>
-            <button>full story</button>
-          </div>
+        <!-- ****PARTIE GAUCHE **** -->
+        <div class="box-container-left">
+          <span>april 24,2017</span>
+          <h3>sed magna ipsum faucibus</h3>
+          <img src="./assets/img/pic02.jpg" alt="mont" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis
+            nisi, atque perferendis alias nihil.
+          </p>
+          <button class="btn">full story</button>
+        </div>
+        <!-- *****PARTIE DROITE ***** -->
+        <div class="box-container-right">
+          <span>april 24,2017</span>
+          <h3>sed magna ipsum faucibus</h3>
+          <img src="./assets/img/pic03.jpg" alt="mont" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis
+            nisi, atque perferendis alias nihil.
+          </p>
+          <button class="btn">full story</button>
         </div>
       </section>
     </main>
     <!-- *******FOOTER******* -->
     <footer>
       <section class="form">
-        <div class="form-container">
-          <div class="form-box-container">
-            <form action="#">
-              <div class="form-grid">
-                <div>
-                  <label for="name">Name</label>
-                  <input type="text" id="name" />
-                </div>
-                <div>
-                  <label for="email">Email</label>
-                  <input type="text" id="email" />
-                </div>
-                <div class="textarea">
-                  <label for="message">Message</label
-                  ><textarea id="message"></textarea>
-                </div>
-              </div>
-              <input type="submit" value="send message" class="button" />
-            </form>
+        <!-- ***FORMULAIRE***** -->
+        <form action="#">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+          <label for="message">Message</label><textarea id="message"></textarea>
+          <div class="submit-container">
+            <input type="submit" value="send message" class="button" />
           </div>
-          <div class="adress-container">
-            <div class="address">
-              <label for="address">address</label>
-              <input type="text" name="" id="" />
-            </div>
-            <div class="phone">
-              <labe for="phone">phone</labe>
-              <input type="tel" name="" id="" />
-            </div>
-            <div class="email">
-              <label for="">email</label>
-              <input type="email" name="" id="" />
-            </div>
-            <div class="scl-media_container">
-              <a href="twitter"
-                ><i><i class="fa-brands fa-twitter"></i></i
-              ></a>
-              <a href="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="instagram"
-                ><i><i class="fa-brands fa-instagram"></i></i
-              ></a>
-              <a href="github"
-                ><i><i class="fa-brands fa-github"></i></i
-              ></a>
-            </div>
+        </form>
+        <!-- *****CONTACT******* -->
+        <div class="adress-container">
+          <div class="address">
+            <h3>address</h3>
+            <p>1234 somewhere road #87257 nashville, TN 00000-0000</p>
+          </div>
+          <div class="phone">
+            <h3>phone</h3>
+            <p>(000) 000-0000</p>
+          </div>
+          <div class="email">
+            <h3>email</h3>
+            <p>info@untitled.ltd</p>
+          </div>
+          <div class="scl-media_container">
+            <h3>social</h3>
+            <ul>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-github"></i></li>
+            </ul>
           </div>
         </div>
       </section>

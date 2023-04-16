@@ -1,0 +1,29 @@
+header {
+    // color: $white1;
+    position: relative;
+    min-height: 100vh;
+
+    .head-container {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       opacity: 0;
+       transform: translateY(40px);
+       animation: headerAnim 1.5s forwards;
+
+       @keyframes headerAnim {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }         
+       }
+       h1 {
+        @include title;
+        font-size: 4rem;
+        letter-spacing: 6px;
+       }
+
+    }
+}
