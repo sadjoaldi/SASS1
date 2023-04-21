@@ -27,7 +27,7 @@ a, a:visited {
 body {
   background: url(../../img/bg.jpg) center/cover fixed;
   text-align: center;
-  font-family: merri, serif;
+  font-family: "merri", serif;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -55,7 +55,7 @@ body::before {
   height: 45px;
   width: 170px;
   font-size: 0.75rem;
-  font-family: inter-bold, sans-serif;
+  font-family: "inter-bold", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: 0.2s;
@@ -87,4 +87,43 @@ header .head-container {
 header .head-container h1 {
   font-size: 4rem;
   letter-spacing: 6px;
+}
+header .head-container p {
+  margin: 40px auto 65px;
+  font-style: italic;
+  width: 85%;
+}
+header .head-container span {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(153, 54, 54, 0.253);
+  width: 85%;
+  height: 95px;
+  z-index: 99;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-left-container li {
+  font-size: 0.7rem;
+  padding: 0 15px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
