@@ -89,6 +89,11 @@ header .head-container h1 {
   font-size: 4rem;
   letter-spacing: 6px;
 }
+@media screen and (max-width: 700px) {
+  header .head-container h1 {
+    font-size: 2rem;
+  }
+}
 header .head-container p {
   margin: 40px auto 65px;
   font-style: italic;
@@ -132,6 +137,11 @@ header nav .nav-left-container li {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  header nav .nav-left-container li {
+    font-size: 0.5rem;
+  }
+}
 header nav .nav-left-container li:first-child {
   background: whitesmoke;
   color: black;
@@ -147,6 +157,11 @@ header nav .nav-right-container {
   max-width: 300px;
   justify-content: space-around;
   margin-right: 10px;
+}
+@media screen and (max-width: 700px) {
+  header nav .nav-right-container {
+    display: none;
+  }
 }
 header nav .nav-right-container li {
   transition: 0.15s;
@@ -182,9 +197,154 @@ main .mass-headline span::before, main .mass-headline span::after {
   top: 50%;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 700px) {
+  main .mass-headline span::before, main .mass-headline span::after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .mass-headline span::before, main .mass-headline span::after {
+    width: 24%;
+  }
+}
 main .mass-headline span::before {
   left: 0;
 }
 main .mass-headline span::after {
   right: 0;
+}
+main .mass-headline h2 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 700px) {
+  main .mass-headline h2 {
+    font-size: 1.5rem;
+  }
+}
+main .mass-headline p {
+  width: 60%;
+  margin: 30px auto;
+  line-height: 35px;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+main .mass-headline .btn {
+  margin: 50px 0 90px;
+}
+main .box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid gray;
+}
+@media screen and (max-width: 700px) {
+  main .box {
+    grid-template-columns: 1fr;
+  }
+}
+main .box .box-container-left, main .box .box-container-right {
+  padding: 60px;
+}
+main .box .box-container-left span, main .box .box-container-right span {
+  font-size: 0.75rem;
+}
+main .box .box-container-left h3, main .box .box-container-right h3 {
+  margin: 20px 0;
+  line-height: 28px;
+}
+main .box .box-container-left p, main .box .box-container-right p {
+  text-align: left;
+  line-height: 30px;
+  margin: 30px 0;
+  font-size: 0.8rem;
+}
+main .box .box-container-left {
+  border-right: 1px solid gray;
+}
+
+footer {
+  background: rgb(221, 218, 218);
+  min-height: 640px;
+  width: 85%;
+  margin: 0 auto 70px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 960px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+footer form {
+  display: grid;
+  gap: 18px;
+  padding: 60px 50px;
+  grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+}
+footer form label {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.7rem;
+  color: #141414;
+}
+footer form input[type=text], footer form textarea {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  resize: none;
+}
+footer form .submit-container {
+  display: flex;
+  align-items: flex-end;
+}
+footer form .submit-container .btn {
+  color: rgb(88, 88, 88);
+  border: 2px solid rgb(58, 58, 58);
+}
+footer .info_address-container {
+  border-left: 1px solid gray;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+@media screen and (max-width: 900px) {
+  footer .info_address-container div:nth-child(1) {
+    border-top: 1px solid gray;
+    padding-bottom: 20px;
+  }
+}
+footer .info_address-container div {
+  border-bottom: 1px solid rgb(153, 149, 149);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  footer .info_address-container div {
+    grid-template-columns: 45% 55%;
+  }
+}
+footer .info_address-container div h3 {
+  font-size: 0.7rem;
+  padding-left: 40px;
+  text-align: left;
+  color: rgb(59, 59, 59);
+}
+footer .info_address-container div p {
+  font-size: 0.8rem;
+  line-height: 26px;
+  text-align: left;
+  color: gray;
+}
+footer .info_address-container .media-container ul {
+  display: flex;
+}
+footer .info_address-container .media-container ul li {
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 150px;
+  height: 40px;
+  width: 40px;
+  font-size: 0.9rem;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
